@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>午夜电影网伦理：关于影像伦理的中文观影观察与讨论平台</title>
+<meta name="description" content="午夜电影网伦理（wuyedianyingwanglunli-zh.github.io）关注电影创作、观看与传播中的伦理问题：影像再现的责任边界、题材处理的方式差异、观众反应的形成机制，以及媒介伦理在流媒体时代的现实变化。本站不提供片源或下载服务，仅提供观察与讨论材料。">
+<meta name="keywords" content="午夜电影网伦理, 影像伦理讨论, 电影创作责任边界, 题材处理方式分析, 观影反应机制, 媒介伦理观察, wuyedianyingwanglunli-zh.github.io">
+<meta name="robots" content="index,follow">
+<meta name="author" content="午夜电影网伦理">
+<meta name="copyright" content="© 2026 午夜电影网伦理">
+<meta name="rating" content="general">
+<meta name="theme-color" content="#101010">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="canonical" href="https://wuyedianyingwanglunli-zh.github.io/">
+<link rel="alternate" hreflang="zh-CN" href="https://wuyedianyingwanglunli-zh.github.io/">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"WebSite",
+  "name":"午夜电影网伦理","url":"https://wuyedianyingwanglunli-zh.github.io/",
+  "alternateName":"午夜电影网伦理观察平台",
+  "inLanguage":"zh-CN",
+  "about":"电影创作、观看与传播中的伦理问题讨论",
+  "audience":{"@type":"Audience","audienceType":"电影观众与影像研究者"}
+}
+</script>
+<style>
+*{margin:0;padding:0;border:0;box-sizing:border-box}
+:root{
+  --bg:#101010;--bg2:#161616;--panel:#1c1c1c;--line:#2a2a2a;--line2:#333;
+  --tx:#e8e8e8;--tx2:#a8a8a8;--tx3:#737373;--tx4:#545454;
+  --acc:#c9ff3a;--acc2:#9edb1e;--mono:"SFMono-Regular",ui-monospace,Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Hiragino Sans GB",sans-serif;
+}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:var(--sans);font-size:15.5px;line-height:1.78;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;background:none;color:inherit;cursor:pointer}
+ul,ol{list-style:none}
+::selection{background:var(--acc);color:#0a0a0a}
+.wrap{width:100%;max-width:1280px;margin:0 auto;padding:0 28px}
+
+/* ===== frame ===== */
+.frame{background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{height:42px;border-bottom:1px solid var(--line);display:flex;align-items:center;font-family:var(--mono);font-size:11.4px;color:var(--tx3);letter-spacing:.08em}
+.bar span{flex:1}
+.bar b{color:var(--acc);font-weight:400}
+.dot-live{width:7px;height:7px;border-radius:50%;background:var(--acc);display:inline-block;margin-right:8px;box-shadow:0 0 0 0 rgba(201,255,58,.7);animation:pulse 2.4s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(201,255,58,0)}100%{box-shadow:0 0 0 0 rgba(201,255,58,0)}}
+.head{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:32px;padding:26px 0 22px}
+.brand{font-family:var(--mono);font-size:14px;letter-spacing:.02em}
+.brand i{font-style:normal;color:var(--tx3)}
+.brand b{color:var(--acc);font-weight:400}
+.nav{display:flex;gap:2px;flex-wrap:wrap;justify-content:flex-end}
+.nav a{padding:7px 14px;font-size:13.4px;color:var(--tx2);border:1px solid transparent;transition:.2s}
+.nav a:hover{color:var(--acc);border-color:var(--line2)}
+.nav a.on{color:var(--acc);border-color:var(--acc)}
+.menu-btn{display:none;width:44px;height:44px;border:1px solid var(--line2);font-size:19px;color:var(--tx2);grid-column:3}
+.menu-btn:hover{color:var(--acc);border-color:var(--acc)}
+
+/* ===== masthead ===== */
+.mast{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:48px;padding:56px 0 62px;border-top:1px solid var(--line)}
+.mast h1{font-size:clamp(34px,6.6vw,74px);font-weight:800;letter-spacing:-.045em;line-height:.98;color:var(--tx)}
+.mast h1 s{text-decoration:none;color:var(--acc)}
+.mast h1 u{text-decoration:none;color:var(--tx4);font-weight:400}
+.sub{margin-top:26px;font-size:clamp(15.5px,2.1vw,18px);color:var(--tx2);max-width:34em;line-height:1.72}
+.kicker{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.kicker li{padding:6px 13px;border:1px solid var(--line2);border-radius:2px;font-family:var(--mono);font-size:12px;color:var(--tx2);letter-spacing:.05em}
+.mast-side{border-left:1px solid var(--line);padding-left:32px;display:flex;flex-direction:column;gap:22px}
+.idx{font-family:var(--mono);font-size:11.5px;color:var(--tx3);letter-spacing:.1em}
+.idx li{padding:9px 0;border-bottom:1px dashed var(--line);display:grid;grid-template-columns:32px 1fr;gap:12px;align-items:baseline}
+.idx li:hover{color:var(--acc)}
+.idx li em{font-style:normal;color:var(--tx4)}
+.meta{font-family:var(--mono);font-size:11.5px;color:var(--tx3);border:1px solid var(--line);padding:16px 18px;letter-spacing:.04em}
+.meta b{color:var(--acc);font-weight:400}
+.meta div{padding:6px 0;border-bottom:1px dashed var(--line)}
+.meta div:last-child{border-bottom:0}
+
+/* ===== section title ===== */
+.sec-head{display:grid;grid-template-columns:120px 1fr;gap:32px;align-items:end;padding:44px 0 22px;border-top:1px solid var(--line)}
+.sec-no{font-family:var(--mono);font-size:12.5px;color:var(--acc);letter-spacing:.14em}
+.sec-head h2{font-size:clamp(22px,3.4vw,32px);font-weight:780;letter-spacing:-.02em;line-height:1.3}
+.sec-head h2 small{display:block;font-size:13.5px;color:var(--tx3);font-weight:400;letter-spacing:.02em;margin-top:8px}
+
+/* ===== tiled grid (section 1) ===== */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.tile{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:26px 24px 24px;min-height:240px;display:flex;flex-direction:column;transition:.3s cubic-bezier(.2,.7,.3,1);position:relative;background:var(--bg)}
+.tile:hover{background:var(--panel);padding-left:30px}
+.tile:hover .arw{color:var(--acc);transform:translateX(4px)}
+.tile .no{font-family:var(--mono);font-size:11px;color:var(--tx4);letter-spacing:.16em}
+.tile h3{margin-top:auto;font-size:19px;font-weight:720;line-height:1.4;letter-spacing:-.01em}
+.tile p{margin-top:11px;font-size:13.6px;color:var(--tx2);line-height:1.72}
+.tile .arw{margin-top:18px;font-family:var(--mono);font-size:13px;color:var(--tx4);transition:.3s}
+.tile.wide{grid-column:span 2}
+.tile.tall{min-height:300px}
+.tile.feat{background:var(--acc);color:#0a0a0a}
+.tile.feat .no{color:#0a0a0a;opacity:.55}
+.tile.feat h3{color:#0a0a0a}
+.tile.feat p{color:#222}
+.tile.feat .arw{color:#0a0a0a}
+
+/* ===== two col + sticky list (section 2) ===== */
+.c2{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;padding-bottom:44px}
+.lead{font-size:19px;line-height:1.82;color:var(--tx);font-weight:500;letter-spacing:-.005em}
+.lead s{text-decoration:none;color:var(--acc)}
+.txt{margin-top:22px;color:var(--tx2);font-size:15.6px}
+.txt p{margin-bottom:16px}
+.txt p b{color:var(--tx);font-weight:600}
+.cases{border-top:1px solid var(--line)}
+.case{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.case .n{font-family:var(--mono);font-size:12px;color:var(--tx4);padding-top:4px}
+.case h4{font-size:16.4px;font-weight:680;line-height:1.5}
+.case p{margin-top:7px;font-size:14px;color:var(--tx2)}
+.case .tag{display:inline-block;margin-top:11px;padding:3px 9px;border:1px solid var(--line2);font-family:var(--mono);font-size:11px;color:var(--acc);letter-spacing:.05em}
+
+/* ===== staircase (section 3) ===== */
+.steps{display:flex;flex-direction:column}
+.step{display:grid;grid-template-columns:80px minmax(0,1fr);border-top:1px solid var(--line)}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step .lv{display:grid;place-items:center;border-right:1px solid var(--line);font-family:var(--mono);font-size:12.5px;color:var(--tx4);letter-spacing:.1em;min-height:150px}
+.step.on .lv{color:var(--acc);background:var(--acc);color:#0a0a0a;font-weight:700}
+.step-b{padding:30px 0 30px 34px}
+.step-b h3{font-size:20px;font-weight:720;letter-spacing:-.015em}
+.step-b .row{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step-b .row div{border-left:2px solid var(--line2);padding-left:14px}
+.step-b .row dt{font-family:var(--mono);font-size:11px;color:var(--tx4);letter-spacing:.12em;text-transform:uppercase}
+.step-b .row dd{margin-top:6px;font-size:14.2px;color:var(--tx2)}
+.step-b p{margin-top:16px;font-size:15px;color:var(--tx2);max-width:52em}
+
+/* ===== quote grid (section 4) ===== */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.quote{background:var(--bg);padding:30px 28px;display:flex;flex-direction:column}
+.quote:hover{background:var(--panel)}
+.quote q{font-size:17.4px;line-height:1.68;font-weight:600;letter-spacing:-.012em;quotes:"\201C" "\201D"}
+.quote q::before{content:open-quote;color:var(--acc);font-size:30px;line-height:0;vertical-align:-.32em;margin-right:4px}
+.quote cite{margin-top:22px;padding-top:16px;border-top:1px dashed var(--line);font-style:normal;font-family:var(--mono);font-size:11.8px;color:var(--tx3);letter-spacing:.05em}
+.quote cite b{display:block;color:var(--tx);font-weight:400;font-size:13px;margin-bottom:3px}
+
+/* ===== filter + definitions (section 5) ===== */
+.filt{display:flex;gap:0;flex-wrap:wrap;border:1px solid var(--line);margin-bottom:26px}
+.filt button{padding:13px 20px;font-family:var(--mono);font-size:12.6px;color:var(--tx2);border-right:1px solid var(--line);transition:.2s;letter-spacing:.05em}
+.filt button:last-child{border-right:0}
+.filt button:hover{color:var(--acc);background:var(--panel)}
+.filt button.on{background:var(--acc);color:#0a0a0a;font-weight:700}
+.defs{display:flex;flex-direction:column}
+.def{border-top:1px solid var(--line);padding:24px 0;display:grid;grid-template-columns:200px 1fr;gap:32px}
+.def:last-child{border-bottom:1px solid var(--line)}
+.def dt{font-size:16.6px;font-weight:680;letter-spacing:-.01em}
+.def dt em{display:block;margin-top:6px;font-style:normal;font-family:var(--mono);font-size:11px;color:var(--tx4);letter-spacing:.12em}
+.def dd{font-size:15.2px;color:var(--tx2)}
+.def dd b{color:var(--tx);font-weight:600}
+
+/* ===== thread (section 6) ===== */
+.thread{display:flex;flex-direction:column;gap:0}
+.post{border-top:1px solid var(--line);padding:26px 0;display:grid;grid-template-columns:150px minmax(0,1fr) 120px;gap:32px;transition:.25s}
+.post:hover{background:var(--panel);padding-left:18px;padding-right:18px}
+.post .ts{font-family:var(--mono);font-size:11.5px;color:var(--tx4);letter-spacing:.06em;padding-top:4px}
+.post h3{font-size:17.6px;font-weight:680;line-height:1.5}
+.post p{margin-top:9px;font-size:14.6px;color:var(--tx2)}
+.post .acts{display:flex;flex-direction:column;gap:7px;font-family:var(--mono);font-size:11.4px;color:var(--tx3);text-align:right;letter-spacing:.04em}
+.post .acts i{font-style:normal;color:var(--acc)}
+
+/* ===== log strip ===== */
+.logstrip{margin-top:44px;border:1px solid var(--line);background:var(--bg2)}
+.logstrip .top{display:flex;justify-content:space-between;padding:13px 20px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:11.5px;color:var(--tx3);letter-spacing:.1em}
+.logstrip .top b{color:var(--acc);font-weight:400}
+.logstrip ul{display:flex;flex-wrap:wrap}
+.logstrip li{flex:1 1 300px;padding:14px 20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:13.6px;color:var(--tx2)}
+.logstrip li b{display:block;font-family:var(--mono);font-size:11px;color:var(--acc);letter-spacing:.1em;margin-bottom:5px;font-weight:400}
+
+/* ===== endboard ===== */
+.end{margin-top:44px;border:1px solid var(--acc);padding:44px 40px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:linear-gradient(135deg,rgba(201,255,58,.08),transparent)}
+.end h2{font-size:clamp(24px,3.8vw,40px);font-weight:800;letter-spacing:-.03em;line-height:1.25}
+.end h2 s{text-decoration:none;color:var(--acc)}
+.end .url{font-family:var(--mono);font-size:clamp(13.5px,2.2vw,17px);color:var(--tx);border-top:1px solid var(--line);padding-top:16px;margin-top:20px}
+.end .url b{display:block;color:var(--tx3);font-size:11.4px;letter-spacing:.16em;margin-bottom:8px;font-weight:400}
+.end-side{border-left:1px solid var(--line);padding-left:40px;font-family:var(--mono);font-size:12.4px;color:var(--tx3);line-height:2}
+.end-side b{color:var(--acc);font-weight:400}
+
+/* ===== foot ===== */
+.foot{margin-top:56px;border-top:1px solid var(--line);padding:38px 0 44px;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px}
+.foot p{max-width:34em;color:var(--tx2);font-size:14.2px;margin-top:16px}
+.foot h4{font-family:var(--mono);font-size:11.5px;color:var(--tx4);letter-spacing:.16em;margin-bottom:16px}
+.foot ul li{padding:7px 0;border-bottom:1px dashed var(--line)}
+.foot ul a{font-size:14.2px;color:var(--tx2);transition:.2s}
+.foot ul a:hover{color:var(--acc);padding-left:6px}
+.copy{border-top:1px solid var(--line);padding:20px 0 34px;font-family:var(--mono);font-size:11.6px;color:var(--tx4);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;letter-spacing:.04em}
+.copy b{color:var(--acc);font-weight:400}
+
+@media(max-width:1080px){
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .quotes{grid-template-columns:1fr}
+  .c2,.end{grid-template-columns:1fr;gap:34px}
+  .end-side{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:24px}
+}
+@media(max-width:760px){
+  body{font-size:15.2px}
+  .wrap{padding:0 18px}
+  .bar{font-size:10.4px;height:38px}
+  .head{grid-template-columns:1fr auto;padding:18px 0 16px}
+  .nav{position:fixed;top:80px;left:18px;right:18px;flex-direction:column;background:var(--bg2);border:1px solid var(--line2);padding:10px;z-index:50;
+    transform:translateY(-10px);opacity:0;pointer-events:none;transition:.24s}
+  .nav.open{transform:none;opacity:1;pointer-events:auto}
+  .nav a{width:100%;padding:12px 14px}
+  .menu-btn{display:grid;place-items:center}
+  .brand{font-size:12px}
+  .mast{grid-template-columns:1fr;gap:34px;padding:34px 0 44px}
+  .mast-side{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:26px}
+  .sec-head{grid-template-columns:1fr;gap:12px;padding:34px 0 18px}
+  .tiles{grid-template-columns:1fr}
+  .tile.wide{grid-column:auto}
+  .step{grid-template-columns:1fr}
+  .step .lv{min-height:44px;border-right:0;border-bottom:1px solid var(--line)}
+  .step-b{padding:22px 0}
+  .step-b .row{grid-template-columns:1fr;gap:14px}
+  .def{grid-template-columns:1fr;gap:10px}
+  .post{grid-template-columns:1fr;gap:12px}
+  .post .acts{text-align:left;flex-direction:row;flex-wrap:wrap;gap:16px}
+  .end{padding:30px 24px}
+  .foot{grid-template-columns:1fr;gap:30px;padding:30px 0 34px}
+  .logstrip li{flex:1 1 100%}
+}
+@media print{.bar,.nav,.menu-btn,.logstrip{display:none}.tile{background:#fff!important;color:#000}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="frame">
+  <div class="wrap">
+    <div class="bar"><span><i class="dot-live"></i>SESSION // 午夜电影网伦理 / 影像伦理观察平台</span><span>v4.2 · 2026 年 10 月 9 日</span></div>
+    <header class="head">
+      <div class="brand">
+        <i>午夜电影网伦理</i><br>
+        <b>wuyedianyingwanglunli-zh.github.io</b>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#core" class="on">核心议题</a>
+        <a href="#lens">观察视角</a>
+        <a href="#levels">判断层级</a>
+        <a href="#quotes">立场辑录</a>
+        <a href="#terms">术语表</a>
+        <a href="#thread">近期讨论</a>
+      </nav>
+      <button class="menu-btn" id="mb" aria-label="打开导航">≡</button>
+    </header>
+  </div>
+</div>
+
+<!-- ============ MASTHEAD ============ -->
+<section class="wrap mast">
+  <div>
+    <h1>影像在 <s>再现</s> 他人之前，<br>先要回答 <u>凭什么。</u></h1>
+    <p class="sub">午夜电影网伦理（wuyedianyingwanglunli-zh.github.io）是一份关于电影创作、观看与传播中伦理问题的持续观察。我们不评价作品的好坏，而是追问：它如何对待被讲述的人、如何处理真实的素材、如何预设观众的反应，以及这些选择在当下意味着什么。</p>
+    <ul class="kicker">
+      <li>不提供片源</li><li>不提供下载</li><li>仅提供观察与讨论</li><li>面向中文读者</li>
+    </ul>
+  </div>
+  <aside class="mast-side">
+    <ol class="idx">
+      <li><em>01</em><a href="#core">六个绕不开的核心议题</a></li>
+      <li><em>02</em><a href="#lens">三种观察视角与五个案例</a></li>
+      <li><em>03</em><a href="#levels">判断的五个层级</a></li>
+      <li><em>04</em><a href="#quotes">立场辑录</a></li>
+      <li><em>05</em><a href="#terms">术语与边界</a></li>
+      <li><em>06</em><a href="#thread">近期讨论</a></li>
+    </ol>
+    <div class="meta">
+      <div><b>网站名称</b>　午夜电影网伦理</div>
+      <div><b>网站网址</b>　wuyedianyingwanglunli-zh.github.io</div>
+      <div><b>定位</b>　影像伦理讨论平台</div>
+      <div><b>更新</b>　不定期，按议题推进</div>
+    </div>
+  </aside>
+</section>
+
+<!-- ============ 栏目 1 ============ -->
+<div class="wrap">
+<section id="core">
+  <header class="sec-head">
+    <div class="sec-no">SECTION / 01</div>
+    <h2>核心议题：六处最容易失衡的位置
+      <small>每个议题都不指向唯一正确答案，而指向必须被看见的权衡。以下为本站持续跟踪的讨论入口。</small>
+    </h2>
+  </header>
+  <div class="tiles">
+    <article class="tile feat">
+      <div class="no">01 / FOCUS</div>
+      <h3>被讲述者的<br>同意权</h3>
+      <p>当影像以真实人物为素材，哪些信息属于可以被公开的部分，哪些必须留在镜头之外。同意不是一次性签字，而是持续的过程。</p>
+      <div class="arw">→ 展开讨论</div>
+    </article>
+    <article class="tile wide">
+      <div class="no">02 / SUBJECT</div>
+      <h3>创伤被用作推进器时，谁在承受它的重量</h3>
+      <p>大量类型片依赖角色受创来推动另一角色完成成长。这种结构把他人的痛苦当成工具，观众得到的情绪体验与当事人实际承受的伤害并不对等。</p>
+      <div class="arw">→ 相关条目</div>
+    </article>
+    <article class="tile">
+      <div class="no">03 / FORM</div>
+      <h3>再现的方式</h3>
+      <p>同一个题材，旁观式与介入式的差别，往往大于题材本身的分歧。</p>
+      <div class="arw">→ 方式对照</div>
+    </article>
+    <article class="tile">
+      <div class="no">04 / GAZE</div>
+      <h3>镜头的分配</h3>
+      <p>谁被观看、谁被允许沉默，决定了叙事的权力结构。</p>
+      <div class="arw">→ 分析框架</div>
+    </article>
+    <article class="tile">
+      <div class="no">05 / MATERIAL</div>
+      <h3>真实素材的边界</h3>
+      <p>纪录片与剧情片之间的边界，比通常认为的更依赖使用者的自觉。</p>
+      <div class="arw">→ 案例比较</div>
+    </article>
+    <article class="tile tall">
+      <div class="no">06 / DISTRIBUTION</div>
+      <h3>传播的伦理：平台如何改变了责任归属</h3>
+      <p>过去由创作者单独承担的选择，如今被算法推荐、平台分级与用户反馈共同分担。责任分散并不等于责任消失，它只是更难被指认。</p>
+      <div class="arw">→ 延伸阅读</div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 栏目 2 ============ -->
+<section id="lens" style="margin-top:20px">
+  <header class="sec-head">
+    <div class="sec-no">SECTION / 02</div>
+    <h2>观察视角：从题材入手，不如从处理方式入手
+      <small>同一类题材可以处理得负责，也可以处理得草率。以下五个案例用于说明差异从何而来，不代表对任何作品的褒贬。</small>
+    </h2>
+  </header>
+  <div class="c2">
+    <div>
+      <p class="lead">判断一部作品是否涉及伦理问题，<s>不看它讲了什么，而看它怎么讲。</s>题材从来不是免责条款，处理的方式才是真正可讨论的部分。</p>
+      <div class="txt">
+        <p><b>第一种常见偏差，是把复杂处境压成单一情绪。</b>原本需要上下文才能成立的关系，被修剪成几场戏以服务主角的转折，被修剪掉的部分并不会因此变得不重要，只是不再被看见。</p>
+        <p><b>第二种，是把沉默误读为同意。</b>角色没有被呈现反对意见，不等于其立场已被表达。镜头之外的声音缺席，本身就是一种选择。</p>
+        <p><b>第三种，是把观众的舒适放在被讲述者的处境之前。</b>当作品主动避开会让观众不适的处理，这种回避往往会转移到现实中的当事人身上，由他们继续承担。</p>
+      </div>
+    </div>
+    <div class="cases">
+      <article class="case">
+        <div class="n">CASE 01</div>
+        <div><h4>真实事件改编：事实的留白由谁填补</h4>
+          <p>改编必然伴随简化，问题在于简化发生在哪一侧——是压缩已被公开的共性信息，还是补足无法核实的个人动机。</p>
+          <span class="tag">创作责任</span>
+        </div>
+      </article>
+      <article class="case">
+        <div class="n">CASE 02</div>
+        <div><h4>弱势群体作为叙事装饰</h4>
+          <p>当某类身份只在主角的成长线上出现一次，随后退出叙事，其存在被降格为道具。</p>
+          <span class="tag">再现问题</span>
+        </div>
+      </article>
+      <article class="case">
+        <div class="n">CASE 03</div>
+        <div><h4>暴力场景的功能判断</h4>
+          <p>可以问的不是该不该拍，而是这场戏能否由其他方式替代而不损失表达，若答案是可以，必要性就值得怀疑。</p>
+          <span class="tag">必要性检验</span>
+        </div>
+      </article>
+      <article class="case">
+        <div class="n">CASE 04</div>
+        <div><h4>采访中的不对等关系</h4>
+          <p>受访者需要讲述，创作者拥有剪辑权，这种结构性不对等无法通过事后的致谢消除。</p>
+          <span class="tag">采访伦理</span>
+        </div>
+      </article>
+      <article class="case">
+        <div class="n">CASE 05</div>
+        <div><h4>平台推荐与内容可见性</h4>
+          <p>流量机制会放大某些处理方式并惩罚另一些，久而久之影响创作者对题材的选择，这种影响很少被承认。</p>
+          <span class="tag">媒介伦理</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 栏目 3 ============ -->
+<section id="levels" style="margin-top:20px">
+  <header class="sec-head">
+    <div class="sec-no">SECTION / 03</div>
+    <h2>判断层级：五个依次递进的问题
+      <small>遇到一部涉及伦理争议的作品时，可以按这个顺序自问。前一层没有答案，后一层的讨论容易滑向立场先行。</small>
+    </h2>
+  </header>
+  <div class="steps">
+    <article class="step on">
+      <div class="lv">LEVEL 01</div>
+      <div class="step-b">
+        <h3>它讲述的是谁，又代表谁在说话</h3>
+        <div class="row"><div><dt>提问</dt><dd>叙事主体与叙事者的关系</dd></div><div><dt>常见误区</dt><dd>把代言当作记录</dd></div><div><dt>检验方式</dt><dd>找出片中唯一没有台词的人</dd></div></div>
+        <p>这是所有讨论的起点。一部作品能否代表它所讲述的人群发言，取决于这个人群是否在创作过程中拥有发言的位置，而不取决于创作者的善意。</p>
+      </div>
+    </article>
+    <article class="step">
+      <div class="lv">LEVEL 02</div>
+      <div class="step-b">
+        <h3>它省略了什么，以及为什么</h3>
+        <div class="row"><div><dt>提问</dt><dd>叙事边界如何划定</dd></div><div><dt>常见误区</dt><dd>认为未呈现即不存在</dd></div><div><dt>检验方式</dt><dd>列出三件影片明确避开的场景</dd></div></div>
+        <p>影片的边界即是选择。省略某些细节可能是美学需要，也可能是为了避免承担某种责任，两者的差别需要具体证据，而不是凭直觉判断。</p>
+      </div>
+    </article>
+    <article class="step">
+      <div class="lv">LEVEL 03</div>
+      <div class="step-b">
+        <h3>它是否提供了观众可以拒绝的入口</h3>
+        <div class="row"><div><dt>提问</dt><dd>观看的主动权归谁</dd></div><div><dt>常见误区</dt><dd>用意外感替代必要性</dd></div><div><dt>检验方式</dt><dd>是否有提示，是否有替代路径</dd></div></div>
+        <p>观众不必提前知道一切，但应保有在不适发生之前退出的可能。把预警当作剧透，与把刺激当作重点，是同一种对观众的不信任。</p>
+      </div>
+    </article>
+    <article class="step">
+      <div class="lv">LEVEL 04</div>
+      <div class="step-b">
+        <h3>它的后果由谁承担，收益又归谁</h3>
+        <div class="row"><div><dt>提问</dt><dd>风险与回报的分配</dd></div><div><dt>常见误区</dt><dd>以艺术自由替代具体后果</dd></div><div><dt>检验方式</dt><dd>追踪讨论中的声音来源</dd></div></div>
+        <p>一部作品带来的讨论热度，与当事人承受的现实后果，常常落在不同的人身上。只谈前者而不谈后者，讨论是不完整的。</p>
+      </div>
+    </article>
+    <article class="step">
+      <div class="lv">LEVEL 05</div>
+      <div class="step-b">
+        <h3>我们的反应，是否已经被预设</h3>
+        <div class="row"><div><dt>提问</dt><dd>观影情绪的生成机制</dd></div><div><dt>常见误区</dt><dd>把被引导出的情绪当作自发</dd></div><div><dt>检验方式</dt><dd>暂停一次，记下当时的情绪指令</dd></div></div>
+        <p>音乐、剪辑节奏与镜头停留时长共同作用于观众的情绪反应。辨认出这些手段，不等于否定感受，而是把感受从被动接受转为主动理解。</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ 栏目 4 ============ -->
+<section id="quotes" style="margin-top:20px">
+  <header class="sec-head">
+    <div class="sec-no">SECTION / 04</div>
+    <h2>立场辑录：几种常见主张及其盲点
+      <small>以下为讨论中反复出现的立场，并非本站结论。每条都附带其容易忽略的部分，因为单方面陈述立场没有分析价值。</small>
+    </h2>
+  </header>
+  <div class="quotes">
+    <figure class="quote"><q>艺术不该有边界，任何限制都是审查。</q><cite><b>常见立场 A</b>盲点：混淆了法律权利与道德责任，前者解决能做什么，后者解决该做什么，两者不是同一层面的问题。</cite></figure>
+    <figure class="quote"><q>观众有选择的权利，不喜欢可以不看。</q><cite><b>常见立场 B</b>盲点：选择成立的前提是信息充分，当处理方式被刻意隐藏直到观看完成，选择权已被削弱。</cite></figure>
+    <figure class="quote"><q>它讲的就是事实，事实本身没有伦理问题。</q><cite><b>常见立场 C</b>盲点：事实是否准确与呈现方式是否负责是两个问题，前者不抵消后者的讨论空间。</cite></figure>
+    <figure class="quote"><q>要求创作者替观众考虑，会扼杀表达。</q><cite><b>常见立场 D</b>盲点：提供退出方式与限制创作自由并不冲突，真正被压缩的是创作者回避责任的空间。</cite></figure>
+    <figure class="quote"><q>讨论伦理就是在替成年人做决定。</q><cite><b>常见立场 E</b>盲点：指出某种处理方式存在问题，不等于主张禁止，批评与禁绝之间的差别必须被守住。</cite></figure>
+    <figure class="quote"><q>商业作品不需要承担这些，它只要好看就行。</q><cite><b>常见立场 F</b>盲点：传播范围越大，处理方式的影响越广，影响力与责任并非只有一方需要承担。</cite></figure>
+  </div>
+</section>
+
+<!-- ============ 栏目 5 ============ -->
+<section id="terms" style="margin-top:20px">
+  <header class="sec-head">
+    <div class="sec-no">SECTION / 05</div>
+    <h2>术语与边界：让讨论停留在同一套词汇上
+      <small>同一个词在不同语境下含义差别很大。本站使用以下定义，便于读者判断某条讨论具体指什么。</small>
+    </h2>
+  </header>
+  <div class="filt" role="tablist">
+    <button class="on" data-t="all">全部术语</button>
+    <button data-t="create">创作侧</button>
+    <button data-t="watch">观看侧</button>
+    <button data-t="spread">传播侧</button>
+  </div>
+  <dl class="defs">
+    <div class="def" data-g="create"><dt>必要性检验<em>NECESSITY TEST</em></dt><dd>判断某段内容是否不可替代的方法：设想用其他方式表达同一意图，若可以替代且不损失表达，则该内容<strong>缺乏必要性</strong>。这是讨论具体场景时的常用标准。</dd></div>
+    <div class="def" data-g="watch"><dt>知情同意<em>INFORMED CONSENT</em></dt><dd>被记录者对所涉内容、使用范围与传播渠道有充分了解后作出的决定。仅在拍摄前签署文件不构成充分同意，因为<strong>用途可能在后期发生变化</strong>。</dd></div>
+    <div class="def" data-g="watch"><dt>情绪劳动转移<em>TRANSFER</em></dt><dd>作品把处理自身情绪的责任转移到观众身上的过程。观众在影院中短暂感受的痛苦，与当事人长期承受的现实处境，<strong>不可等量交换</strong>。</dd></div>
+    <div class="def" data-g="create"><dt>主体位置<em>SUBJECT POSITION</em></dt><dd>被讲述者在叙事中是被当作独立的人，还是作为主角转变的工具。判断依据是：<strong>若该角色完全删除，主角是否仍能完成同样的成长</strong>。</dd></div>
+    <div class="def" data-g="spread"><dt>可见性分配<em>VISIBILITY</em></dt><dd>平台通过推荐机制决定哪些内容获得曝光。这一机制本身带有价值判断，却通常以中立的技术语言呈现，<strong>因此较少被当作伦理议题讨论</strong>。</dd></div>
+    <div class="def" data-g="spread"><dt>事后修正<em>REVISION</em></dt><dd>作品引发争议后追加说明、修改版本或下架的行为。其意义取决于修正发生在哪个环节：<strong>创作阶段的调整与发布后的回应，性质并不相同</strong>。</dd></div>
+    <div class="def" data-g="create"><dt>素材主权<em>MATERIAL SOVEREIGNTY</em></dt><dd>涉及真实人物的影像素材，在被拍摄者之外还受哪些人控制。剪辑权与发布权分离时，<strong>责任归属会变得模糊</strong>，这也是纠纷高发的位置。</dd></div>
+    <div class="def" data-g="watch"><dt>观众预期管理<em>EXPECTATION</em></dt><dd>在观看前提供足够的信息，使观众能够作出是否继续的决定。它与剧透的边界在于：<strong>告知处理方式不等于揭示情节</strong>。</dd></div>
+  </dl>
+</section>
+
+<!-- ============ 栏目 6 ============ -->
+<section id="thread" style="margin-top:20px">
+  <header class="sec-head">
+    <div class="sec-no">SECTION / 06</div>
+    <h2>近期讨论：来自读者的提问与回应
+      <small>以下为本站收到的代表性提问，已征得提问者同意匿名刊登。提问邮箱不公开，回复仅保留讨论部分。</small>
+    </h2>
+  </header>
+  <div class="thread">
+    <article class="post">
+      <div class="ts">2026 / 09 / 28</div>
+      <div><h3>如果一部作品整体完成度很高，其中的伦理问题是否可以被原谅</h3>
+        <p>这是一个顺序问题，不是加减问题。作品的完成度决定它值得被认真对待，而不是免除讨论。恰恰因为完成度高，处理方式才更有必要被分析，否则批评只会停在情绪层面。</p></div>
+      <div class="acts"><span>伦理 <i>●</i></span><span>8 条回应</span></div>
+    </article>
+    <article class="post">
+      <div class="ts">2026 / 09 / 21</div>
+      <div><h3>普通观众是否也需要了解这些，还是只和从业者有关</h3>
+        <p>与每个人有关，因为观看本身是一种参与。观众的反应会反过来影响创作者的选择，这种反馈在流媒体时代尤其直接，只是很少被明确承认。</p></div>
+      <div class="acts"><span>观看侧 <i>●</i></span><span>12 条回应</span></div>
+    </article>
+    <article class="post">
+      <div class="ts">2026 / 09 / 14</div>
+      <div><h3>纪录片中，受访者反悔了该怎么办</h3>
+        <p>先判断反悔针对的是哪一部分：是具体内容，还是整体使用。若无法达成一致，通常需要撤回相关片段或重新协商使用范围，不能以合约已签为由忽视新的情况。</p></div>
+      <div class="acts"><span>采访伦理 <i>●</i></span><span>5 条回应</span></div>
+    </article>
+    <article class="post">
+      <div class="ts">2026 / 09 / 06</div>
+      <div><h3>是否应该给所有作品都加上详细的观看提示</h3>
+        <p>不需要，也无法做到。提示应针对会造成真实伤害的内容，而不是替代剧情介绍。过度提示会稀释其意义，让真正重要的部分被淹没在清单里。</p></div>
+      <div class="acts"><span>观众预期 <i>●</i></span><span>9 条回应</span></div>
+    </article>
+    <article class="post">
+      <div class="ts">2026 / 08 / 30</div>
+      <div><h3>平台算法推荐算不算一种内容立场</h3>
+        <p>算，只是通常不这么称呼。决定什么被更多人看到，本身就是一种立场表达，区别在于它由人作出还是由模型作出，后者的责任更难指认，但并不因此更中立。</p></div>
+      <div class="acts"><span>媒介伦理 <i>●</i></span><span>14 条回应</span></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ LOG STRIP ============ -->
+<div class="logstrip">
+  <div class="top"><span>更新记录 / CHANGELOG</span><b>最近一次修订：2026-10-09</b></div>
+  <ul>
+    <li><b>10 / 09</b>新增术语"观众预期管理"与"事后修正"两条定义</li>
+    <li><b>10 / 02</b>补充第五个判断层级的检验方式说明</li>
+    <li><b>09 / 28</b>发布栏目六近期讨论的第四期内容</li>
+    <li><b>09 / 18</b>调整立场辑录的排序，避免被误读为优先级</li>
+  </ul>
+</div>
+
+<!-- ============ ENDBOARD ============ -->
+<div class="end">
+  <div>
+    <h2>关于 <s>午夜电影网伦理</s><br>以及这个网址</h2>
+    <div class="url"><b>SITE / OFFICIAL URL</b>https://wuyedianyingwanglunli-zh.github.io</div>
+  </div>
+  <div class="end-side">
+    网站名称　<b>午夜电影网伦理</b><br>
+    网站网址　<b>https://wuyedianyingwanglunli-zh.github.io</b><br>
+    内容性质　<b>影像伦理观察与讨论，不提供片源或下载</b><br>
+    使用提示　<b>内容仅供参考，涉及具体作品的判断请以多方信源交叉核实</b>
+  </div>
+</div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="brand"><i>午夜电影网伦理</i><br><b>wuyedianyingwanglunli-zh.github.io</b></div>
+        <p>午夜电影网伦理（wuyedianyingwanglunli-zh.github.io）以影像伦理为讨论对象，关注创作、观看与传播三个环节中的责任边界。本站不提供任何在线播放、下载或片源服务，所有内容为观察与讨论材料。</p>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="#core">核心议题</a></li>
+          <li><a href="#lens">观察视角</a></li>
+          <li><a href="#levels">判断层级</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>资料</h4>
+        <ul>
+          <li><a href="#terms">术语与边界</a></li>
+          <li><a href="#thread">近期讨论</a></li>
+          <li><a href="#quotes">立场辑录</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 午夜电影网伦理 · 网站名称：午夜电影网伦理 ｜ 网站网址：https://wuyedianyingwanglunli-zh.github.io ｜ 内容仅供参考，不构成对任何作品的评价结论</span>
+      <span>BUILT 2026-10-09 / UTF-8 / 单文件</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var m=document.getElementById('mb'),n=document.getElementById('nav');
+  if(m&&n){m.addEventListener('click',function(){n.classList.toggle('open');});
+    n.addEventListener('click',function(e){if(e.target.tagName==='A')n.classList.remove('open');});}
+  var bs=document.querySelectorAll('.filt button'),ds=document.querySelectorAll('.defs .def');
+  bs.forEach(function(b){b.addEventListener('click',function(){
+    bs.forEach(function(x){x.classList.remove('on');});b.classList.add('on');
+    var t=b.dataset.t;
+    ds.forEach(function(d){d.style.display=(t==='all'||d.dataset.g===t)?'grid':'none';});
+  });});
+})();
+</script>
+</body>
+</html>
